@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A329r" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fd1-pY-HnT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Track-->
+        <scene sceneID="R44-Om-Pvs">
+            <objects>
+                <viewController title="Track" id="j4K-xS-3va" customClass="MapViewController" customModule="ISM_Shuttle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bof-6Y-07B"/>
+                        <viewControllerLayoutGuide type="bottom" id="CZn-tb-Ud2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fDG-GP-fNa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="mapView" mapType="standard" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OL-NL-QCp">
+                                <rect key="frame" x="0.0" y="7" width="600" height="593"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0OL-NL-QCp" firstAttribute="top" secondItem="fDG-GP-fNa" secondAttribute="topMargin" constant="7" id="1qR-IN-vcx"/>
+                            <constraint firstItem="0OL-NL-QCp" firstAttribute="leading" secondItem="fDG-GP-fNa" secondAttribute="leading" id="XSm-Ny-NTo"/>
+                            <constraint firstItem="0OL-NL-QCp" firstAttribute="bottom" secondItem="CZn-tb-Ud2" secondAttribute="top" id="wpH-my-KFn"/>
+                            <constraint firstAttribute="trailing" secondItem="0OL-NL-QCp" secondAttribute="trailing" id="yqj-c8-zdB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Track" id="hFK-Vb-ZOj">
+                        <barButtonItem key="rightBarButtonItem" title="Options" id="fDF-zT-p6y">
+                            <connections>
+                                <segue destination="Ujl-U4-p6a" kind="show" id="tYr-97-nOL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="0OL-NL-QCp" id="7lQ-dW-yqs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSd-aD-qaz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2572.5" y="342.25352112676052"/>
+        </scene>
+        <!--Options-->
+        <scene sceneID="2oT-4l-tfj">
+            <objects>
+                <viewController title="Options" id="Ujl-U4-p6a" customClass="OptionsViewController" customModule="ISM_Shuttle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jP7-vG-QGF"/>
+                        <viewControllerLayoutGuide type="bottom" id="KXg-uB-llh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tN8-z2-GP4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="500" translatesAutoresizingMaskIntoConstraints="NO" id="cTw-CW-kU1">
+                                <rect key="frame" x="16" y="93" width="568" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="lBf-c0-Ms9"/>
+                                </constraints>
+                                <string key="text">Welcome to the ISM Shuttle tracking application. This App has been made to make it convenient for you to track the otherwise elusive Shuttle Bus at Indian School of Mines, Dhanbad.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cTw-CW-kU1" firstAttribute="top" secondItem="jP7-vG-QGF" secondAttribute="bottom" constant="29" id="5v9-wZ-HXx"/>
+                            <constraint firstItem="cTw-CW-kU1" firstAttribute="leading" secondItem="tN8-z2-GP4" secondAttribute="leadingMargin" id="Z5b-Om-70c"/>
+                            <constraint firstItem="cTw-CW-kU1" firstAttribute="trailing" secondItem="tN8-z2-GP4" secondAttribute="trailingMargin" id="h55-BW-n6H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="9CF-1y-BuY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zc1-dp-hqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3476" y="342"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FkC-Ke-daE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fd1-pY-HnT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CBQ-g4-h90">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="j4K-xS-3va" kind="relationship" relationship="rootViewController" id="DMG-kw-zIj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AZo-Yc-31t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710" y="342.25352112676052"/>
+        </scene>
+    </scenes>
+</document>

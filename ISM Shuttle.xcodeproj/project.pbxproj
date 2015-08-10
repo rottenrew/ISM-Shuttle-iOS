@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51A58A0E1B789DF6001E55D1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A58A0D1B789DF6001E55D1 /* Storyboard.storyboard */; };
+		51A58A101B78A62B001E55D1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A58A0F1B78A62B001E55D1 /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		51A58A121B78A937001E55D1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A58A111B78A937001E55D1 /* MapViewController.swift */; };
+		51A58A141B78A94A001E55D1 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A58A131B78A94A001E55D1 /* OptionsViewController.swift */; };
 		51E281F01B78989500F2CCDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E281EF1B78989500F2CCDC /* AppDelegate.swift */; };
-		51E281F21B78989500F2CCDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E281F11B78989500F2CCDC /* ViewController.swift */; };
-		51E281F51B78989500F2CCDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E281F31B78989500F2CCDC /* Main.storyboard */; };
 		51E281F71B78989500F2CCDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E281F61B78989500F2CCDC /* Images.xcassets */; };
-		51E281FA1B78989500F2CCDC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E281F81B78989500F2CCDC /* LaunchScreen.xib */; };
 		51E282061B78989500F2CCDC /* ISM_ShuttleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E282051B78989500F2CCDC /* ISM_ShuttleTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,13 +27,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51A58A0D1B789DF6001E55D1 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		51A58A0F1B78A62B001E55D1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		51A58A111B78A937001E55D1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		51A58A131B78A94A001E55D1 /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		51E281EA1B78989500F2CCDC /* ISM Shuttle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ISM Shuttle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E281EE1B78989500F2CCDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51E281EF1B78989500F2CCDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		51E281F11B78989500F2CCDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		51E281F41B78989500F2CCDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51E281F61B78989500F2CCDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		51E281F91B78989500F2CCDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		51E281FF1B78989500F2CCDC /* ISM ShuttleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ISM ShuttleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E282041B78989500F2CCDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51E282051B78989500F2CCDC /* ISM_ShuttleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISM_ShuttleTests.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A58A101B78A62B001E55D1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		51E281E11B78989500F2CCDC = {
 			isa = PBXGroup;
 			children = (
+				51A58A0F1B78A62B001E55D1 /* MapKit.framework */,
 				51E281EC1B78989500F2CCDC /* ISM Shuttle */,
 				51E282021B78989500F2CCDC /* ISM ShuttleTests */,
 				51E281EB1B78989500F2CCDC /* Products */,
@@ -78,10 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				51E281EF1B78989500F2CCDC /* AppDelegate.swift */,
-				51E281F11B78989500F2CCDC /* ViewController.swift */,
-				51E281F31B78989500F2CCDC /* Main.storyboard */,
+				51A58A111B78A937001E55D1 /* MapViewController.swift */,
+				51A58A131B78A94A001E55D1 /* OptionsViewController.swift */,
+				51A58A0D1B789DF6001E55D1 /* Storyboard.storyboard */,
 				51E281F61B78989500F2CCDC /* Images.xcassets */,
-				51E281F81B78989500F2CCDC /* LaunchScreen.xib */,
 				51E281ED1B78989500F2CCDC /* Supporting Files */,
 			);
 			path = "ISM Shuttle";
@@ -192,9 +196,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51E281F51B78989500F2CCDC /* Main.storyboard in Resources */,
-				51E281FA1B78989500F2CCDC /* LaunchScreen.xib in Resources */,
 				51E281F71B78989500F2CCDC /* Images.xcassets in Resources */,
+				51A58A0E1B789DF6001E55D1 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51E281F21B78989500F2CCDC /* ViewController.swift in Sources */,
+				51A58A141B78A94A001E55D1 /* OptionsViewController.swift in Sources */,
 				51E281F01B78989500F2CCDC /* AppDelegate.swift in Sources */,
+				51A58A121B78A937001E55D1 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,25 +238,6 @@
 			targetProxy = 51E282001B78989500F2CCDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		51E281F31B78989500F2CCDC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				51E281F41B78989500F2CCDC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		51E281F81B78989500F2CCDC /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				51E281F91B78989500F2CCDC /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		51E282071B78989500F2CCDC /* Debug */ = {
@@ -409,6 +394,7 @@
 				51E2820B1B78989500F2CCDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51E2820C1B78989500F2CCDC /* Build configuration list for PBXNativeTarget "ISM ShuttleTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +403,7 @@
 				51E2820E1B78989500F2CCDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
