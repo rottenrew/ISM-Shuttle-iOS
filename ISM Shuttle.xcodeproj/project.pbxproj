@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		518E0A891B8508D500872CC0 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E0A881B8508D500872CC0 /* JSON.swift */; };
 		51A58A0E1B789DF6001E55D1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A58A0D1B789DF6001E55D1 /* Storyboard.storyboard */; };
 		51A58A101B78A62B001E55D1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A58A0F1B78A62B001E55D1 /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		51A58A121B78A937001E55D1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A58A111B78A937001E55D1 /* MapViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		518E0A881B8508D500872CC0 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		51A58A0D1B789DF6001E55D1 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		51A58A0F1B78A62B001E55D1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		51A58A111B78A937001E55D1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +39,6 @@
 		51E281EF1B78989500F2CCDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51E281F61B78989500F2CCDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		51E281FF1B78989500F2CCDC /* ISM ShuttleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ISM ShuttleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51E282041B78989500F2CCDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51E282051B78989500F2CCDC /* ISM_ShuttleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISM_ShuttleTests.swift; sourceTree = "<group>"; };
 		51E664CB1B80F02900BFD247 /* Directions.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Directions.geojson; sourceTree = "<group>"; };
 		51E664CC1B81020500BFD247 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 			children = (
 				51E281EF1B78989500F2CCDC /* AppDelegate.swift */,
 				51A58A111B78A937001E55D1 /* MapViewController.swift */,
+				518E0A881B8508D500872CC0 /* JSON.swift */,
 				51A58A131B78A94A001E55D1 /* OptionsViewController.swift */,
 				51A58A0D1B789DF6001E55D1 /* Storyboard.storyboard */,
 				51E664CB1B80F02900BFD247 /* Directions.geojson */,
@@ -108,17 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				51E282051B78989500F2CCDC /* ISM_ShuttleTests.swift */,
-				51E282031B78989500F2CCDC /* Supporting Files */,
 			);
 			path = "ISM ShuttleTests";
-			sourceTree = "<group>";
-		};
-		51E282031B78989500F2CCDC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				51E282041B78989500F2CCDC /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51A58A141B78A94A001E55D1 /* OptionsViewController.swift in Sources */,
+				518E0A891B8508D500872CC0 /* JSON.swift in Sources */,
 				51E281F01B78989500F2CCDC /* AppDelegate.swift in Sources */,
 				51A58A121B78A937001E55D1 /* MapViewController.swift in Sources */,
 			);
