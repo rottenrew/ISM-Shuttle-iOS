@@ -8,32 +8,23 @@
 
 import UIKit
 import MapKit
+import Foundation
 
 class MapViewController: UIViewController, NSURLConnectionDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
-
+    var busLocation :MKPointAnnotation?
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        var route: MKOverlay
         self.mapView.showsUserLocation = true
         let initialLocation = CLLocation(latitude: 23.81, longitude: 86.44)
         centerMapOnLocation(initialLocation)
 
         // Do any additional setup after loading the view.
         
-        let json = JSON.fromURL("http://shuttletracker.zz.mu/?bus=1&latest=1")
-        
-        let lat:Double = (json["latitude"].toString() as NSString).doubleValue
-        let lon:Double = (json["longitude"].toString() as NSString).doubleValue
-        
-        println("Latitude : \(lat/100) , Longitude : \(lon/100)")
-        
-        var busLocation = MKPointAnnotation()
-        busLocation.coordinate = CLLocationCoordinate2D(latitude:lat/100, longitude:lon/100)
-        
-        mapView.addAnnotation(busLocation)
+        var timer : NSTimer = NSTimer.scheduledTimerWithTimeInterval(5.0, target:self, selector:Selector("track:"), userInfo: nil, repeats: true)
 
     }
 
@@ -43,11 +34,37 @@ class MapViewController: UIViewController, NSURLConnectionDelegate {
     }
     
     func centerMapOnLocation(location: CLLocation) {
-        let regionRadius: CLLocationDistance = 1000
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,regionRadius * 1.5, regionRadius * 1.5)
+        let regionRadius: CLLocationDistance = 700
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,regionRadius * 1.3, regionRadius * 1.3)
         mapView.setRegion(coordinateRegion, animated: true)
     }
+    
+    func track(timer:NSTimer){
+        
+        if ((busLocation) != nil){
+            mapView.removeAnnotation(busLocation)
+        }
+        else{
+            busLocation = MKPointAnnotation()
+        }
+        
+        let json = JSON.fromURL("http://shuttletracker.zz.mu/?bus=1&latest=1")
+        
+        let lat:Double = (json["latitude"].toString() as NSString).doubleValue
+        let lon:Double = (json["longitude"].toString() as NSString).doubleValue
+        
+        busLocation!.coordinate = CLLocationCoordinate2D(latitude:coordinates(lat/100.0), longitude:coordinates(lon/100.0))
+        mapView.addAnnotation(busLocation)
+        
+        //centerMapOnLocation(CLLocation(latitude:coordinates(lat/100.0), longitude:coordinates(lon/100.0)))
 
+    }
+    
+    func coordinates(var f: Double)->Double{
+        var a : Int = Int(f)
+        var frac : Double = (f - Double(a))/0.6
+        return Double(a) + frac
+    }
 
     /*
     // MARK: - Navigation

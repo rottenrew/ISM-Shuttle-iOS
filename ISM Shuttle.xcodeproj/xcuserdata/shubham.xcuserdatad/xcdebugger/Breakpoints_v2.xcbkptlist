@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ISM Shuttle/MapViewController.swift"
-            timestampString = "461543260.308983"
+            timestampString = "461745462.177083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
             landmarkName = "MapViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ISM Shuttle/MapViewController.swift"
-            timestampString = "461705338.956661"
+            timestampString = "461747803.04401"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "MapViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ISM Shuttle/MapViewController.swift"
-            timestampString = "461705338.956661"
+            timestampString = "461747803.04401"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "MapViewController"
             landmarkType = "3">
          </BreakpointContent>
